@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        SmileLas
+    </title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+
+        #full-screen-background-image {
+            z-index: -999;
+            min-height: 100%;
+            min-width: 1024px;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+
+        div.a {
+            font-size: 80px;
+            position: fixed;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        div.b {
+            font-size: 60px;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            left: 51%;
+        }
+
+        div.c {
+            font-size: 50px;
+            position: fixed;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        div.d {
+            font-size: 200px;
+            position: fixed;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        #pic {
+            width: 500px;
+            height: 502px;
+        }
+    </style>
+
+</head>
+<body onclick="smile()" onload="changePic()">
+    <img alt="full screen background image" src="gray.jpg" id="full-screen-background-image" />
+    <div style="position:absolute; top:280px;left:50px;width:200px;"> </div>
+
+    <div ALIGN="center">
+        <div id="pic">
+            
+        </div>
+    </div>
+    <div class="a">
+        Smile Las
+    </div>
+    <div class="b">
+        i just want to be happy
+    </div>
+
+    <div class="c">
+        ค่าความสุข
+    </div>
+    <div class="d" id="point">
+        0
+    </div>
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
